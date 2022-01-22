@@ -1,0 +1,8 @@
+<div class="task" [ngClass]="{reminder: task.reminder}" (dblclick)="onToggle(task)">
+    <div class="main">
+        <p>{{task.text}}</p>
+        <P (click)="onDelete(task)" style="color: red; font-weight: bold ;">X</P>
+    </div>
+    <p>{{task.day}}</p>
+    
+</div>
